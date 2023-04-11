@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "ddb89d99-3b42-4e07-b8ec-6bde0b5e03b7",
+		"name": "Workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25438271"
+	},
+	"item": [
+		{
+			"name": "Add new song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Mockingbird\",\n    \"genre\":\"rap\",\n    \"artist\": \"Eminem\",\n    \"positionOnBilboardHits\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/songs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new artist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Asap\",\n    \"lastName\": \"Rocky\",\n    \"age\": 30,\n    \"gender\": \"male\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/artists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"artists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search for artists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/artists?firstName=Eminem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"artists"
+					],
+					"query": [
+						{
+							"key": "firstName",
+							"value": "Eminem"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search for songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/songs?title=Mockingbird",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Mockingbird"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
