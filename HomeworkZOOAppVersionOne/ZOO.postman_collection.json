@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "9acf04db-9b9c-4dd0-8ba8-a72065df807d",
+		"name": "ZOO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25438271"
+	},
+	"item": [
+		{
+			"name": "Get all zookeepers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/zookeepers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"zookeepers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all animals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/animals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding zookeeper",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \"_id\": \"9876h32651g53s6873782\",\n        \"name\": \"Jasmina Oliver\",\n        \"age\": 28,\n        \"location\": \"Tetovo\",\n        \"isActive\": false\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/zookeepers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"zookeepers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding an animal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"6435cc33bb97788bb48195e4\",\n  \"name\": \"̉mile\",\n  \"type\": \"ris\",\n  \"age\": 5,\n  \"location\": \"Mavrovo\",\n  \"gender\": \"M\",\n  \"characteristics\": {\n    \"food\": [\"insects\", \"fish\", \"hippo\", \"meat\"],\n    \"color\": \"white\",\n    \"isDangerous\": true,\n    \"weight\": 100,\n    \"enclosure\": \"mountain\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/animals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update zookeeper",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \"_id\": \"9876h32651g53s6873782\",\n        \"name\": \"Jasmina Olivera\",\n        \"age\": 28,\n        \"location\": \"Prilep\",\n        \"isActive\": true\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/zookeepers/9876h32651g53s6873782",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"zookeepers",
+						"9876h32651g53s6873782"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updating an animal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"̉zile\",\n  \"type\": \"ris\",\n  \"age\": 5,\n  \"location\": \"Mavrovo\",\n  \"gender\": \"M\",\n  \"characteristics\": {\n    \"food\": [\"insects\", \"fish\", \"hippo\", \"meat\"],\n    \"color\": \"white\",\n    \"isDangerous\": true,\n    \"weight\": 100,\n    \"enclosure\": \"mountain\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/animals/6435cc33bb97788bb48195e4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animals",
+						"6435cc33bb97788bb48195e4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete zookeeper",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"_id\": \"9876h32671g53s6897152\",\n        \"name\": \"John Doe 2\",\n        \"age\": 24,\n        \"location\": \"Skopje\",\n        \"isActive\": true\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/zookeepers/9876h32651g53s6873782",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"zookeepers",
+						"9876h32651g53s6873782"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an animal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"_id\": \"9876h32671g53s6897152\",\n        \"name\": \"John Doe 2\",\n        \"age\": 24,\n        \"location\": \"Skopje\",\n        \"isActive\": true\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/animals/6435cc33bb97788bb48195e4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animals",
+						"6435cc33bb97788bb48195e4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
